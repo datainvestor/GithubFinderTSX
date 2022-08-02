@@ -1,12 +1,12 @@
-import UserResults from '../components/users/UserResults'
+import UserResults from '../components/users/UserResults';
 
-function Home() :JSX.Element {
+function Home(): JSX.Element {
   return (
     <>
       {/* SEARCH COMPONENT */}
       <UserResults />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
