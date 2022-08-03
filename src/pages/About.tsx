@@ -1,3 +1,15 @@
+export function divide(a: number, b: number): number {
+  // Sure, we cannot divide by 0,
+  // so in this case we will throw an error.
+  if (b === 0) {
+    throw new Error("You can't divide by zero.");
+  }
+
+  // If everything is okay, we will return
+  // a round division result.
+  return Math.round(a / b);
+}
+
 function About(): JSX.Element {
   return (
     <>
@@ -16,12 +28,12 @@ function About(): JSX.Element {
         .
       </p>
       <p className="text-lg text-gray-400">
-        Version <span className="text-white">1.0.0</span>
+        Version <span className="text-black">1.0.0</span>
       </p>
       <p className="text-lg text-gray-400">
-        Layout By:
-        <a className="text-white" href="https://twitter.com/hassibmoddasser">
-          Hassib Moddasser
+        Layout Ver:
+        <a className="text-black" href="https://twitter.com/hassibmoddasser">
+          {divide(4, 2)}
         </a>
       </p>
     </>
